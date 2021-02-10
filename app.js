@@ -20,6 +20,8 @@ const displaySongs = songs => {
     parentDiv.innerHTML ="";
     songs.forEach(song => {
         const childDiv = document.createElement("div");
+        const songP = `https:${(song.preview).split(":")[1]}`;
+        console.log(songP);
         childDiv.className = "single-result row align-items-center my-3 p-3";
         childDiv.innerHTML = `
             <div class="col-md-9">
