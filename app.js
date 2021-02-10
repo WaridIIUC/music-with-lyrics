@@ -22,7 +22,7 @@ const displaySongs = songs => {
         const childDiv = document.createElement("div");
         childDiv.className = "single-result row align-items-center my-3 p-3";
        // const songPreview = "https:"+(song.preview).split(":")[1];
-        console.log(songPreview);
+      //  console.log(songPreview);
         childDiv.innerHTML = `
             <div class="col-md-9">
                 <h3 class="lyrics-name">${song.title}</h3>
