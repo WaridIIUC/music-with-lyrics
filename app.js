@@ -21,12 +21,14 @@ const displaySongs = songs => {
     songs.forEach(song => {
         const childDiv = document.createElement("div");
         childDiv.className = "single-result row align-items-center my-3 p-3";
+        const songPreview = "https:"+(song.preview).split(":")[1];
+        console.log(songPreview);
         childDiv.innerHTML = `
             <div class="col-md-9">
                 <h3 class="lyrics-name">${song.title}</h3>
                 <p class="author lead">Album by <span>${song.artist.name}</span></p>
                 <audio controls>
-                    <source src="${song.preview}" type="audio/ogg">
+                    <source src="${songPreview}" type="audio/ogg">
                 </audio>
                 </div>
             <div class="col-md-3 text-md-right text-center">
